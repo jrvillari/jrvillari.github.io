@@ -1,0 +1,31 @@
+<project name="project4" default="compile">
+       
+        <target name="compile" depends="clean"> 
+                <javac srcdir="." includeantruntime="false"/>
+        </target>
+        
+        <target name="clean">
+                <delete includeEmptyDirs="true">
+                        <fileset dir="." includes="**/*.class, **/*.txt, **/*.MF,META-INF, **/*.xml~, **/*.java~" defaultexcludes="no"/>
+                </delete>
+        </target>
+        
+        <target name="run" depends="compile,author">
+                <java fork="no" classname="csc250.Driver" classpath="."> 
+                        <arg line=""/>
+                </java>
+        </target>
+
+        <target name="jar">
+                <jar jarfile="villarj3.jar">
+                        <fileset dir="." includes="**/*.java **/*.xml"/>
+                        <manifest>
+                                <attribute name="Built-By" value="JR Villari"/>
+                        </manifest>
+                </jar>
+        </target>
+    
+        <target name="author">
+		       <echo message= "Written by JR Villari"/>
+        </target>
+</project>

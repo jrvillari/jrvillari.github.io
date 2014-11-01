@@ -1,0 +1,29 @@
+<project name="Project_3" default="compile">
+
+	<target name ="compile" depends = "clean">	
+		<javac srcdir="."  classpath="."/>
+	</target>
+	
+	<target name ="clean">	
+		<delete>
+			<fileset dir="." includes="*.*~"/>
+			<fileset dir="." includes="**/*.class"/>
+			<fileset dir="." includes="**/*.txt"/>
+		</delete>
+		<delete dir="META-INF" failonerror="false"/>	
+	</target>
+	
+	<target name="jar">
+		<jar destfile="villarj3.jar" includes="**/*.java build.xml" basedir="."/>
+	</target>
+
+	<target name= "run" depends="compile">
+		<java classname= "Driver" fork="true"/>
+	</target>
+
+	<target name="author">
+		<echo message= "Program coded by JR Villari"/>
+	</target>
+	
+	
+</project>

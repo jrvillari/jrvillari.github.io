@@ -1,0 +1,82 @@
+Script started on Mon Mar  3 21:12:32 2014
+[?1034hbash-3.2$ exit./SiteExecg++ SiteDriver.cpp Site.cpp SiteList.cpp -o SiteExec
+bash-3.2$ g++ SiteDriver.cpp Site.cpp SiteList.cpp -o SiteExec[C[C[C[C[C[C[C[C[C[Cexit[K./SiteExec
+
+******************* SITE DATABASE ANALYSIS PROGRAM ***********************
+Please enter the file name you would like to use: 
+sites.csv
+
+The system has been populated with data from the file. Would you like to: 
+1) Add a New Site
+2) Predict Site Status 
+3) Output the Data
+4) Exit 
+Please enter a number corresponding to the desired action: 
+asdf
+Invalid Option. Please choice a choice between 1 and 4: 
+-100
+Invalid Option. Please choice a choice between 1 and 4: 
+5
+Invalid Option. Please choice a choice between 1 and 4: 
+1
+Please Enter Site ID: 
+5801
+Please Enter Site Name: 
+New Site
+Please Enter Site Status: 
+Clear
+Please Enter Site Remediation Status: 
+NA
+Please Enter Contamination Type: 
+NA
+Please Enter X-Coordinate: 
+543210
+Please Enter Y-Coordinate: 
+453210
+You just added a site with the following details: 
+5801 New Site Clear NA NA 543210 453210
+1) Add a New Site
+2) Predict Site Status 
+3) Output the Data
+4) Exit 
+Please enter a number corresponding to the desired action: 
+2
+Please Enter X-Coordinate: 
+asdf
+Invalid Coordinate. Please enter an integer greater than zero: 
+-100
+Invalid Coordinate. Please enter an integer greater than zero: 
+430123
+Please Enter Y-Coordinate: 
+fdsa
+Invalid Coordinate. Please enter an integer greater than zero: 
+-5
+Invalid Coordinate. Please enter an integer greater than zero: 
+530123
+
+The closest site is: 5637 which is 2852.9 units away and is Clear.
+The second closest site is: 5544 which is 3277.87 units away and is Clear.
+The third closest site is: 5202 which is 4241.91 units away and is Clear.
+The fourth closest site is: 5530 which is 4348.66 units away and is DEP case.
+The fifth closest site is: 5339 which is 5130.15 units away and is Clear.
+
+Based on the statuses of the above sites, it is highly likely that the site at 430123 and 530123 is clear.
+
+1) Add a New Site
+2) Predict Site Status 
+3) Output the Data
+4) Exit 
+Please enter a number corresponding to the desired action: 
+3
+Please enter a name for the output file: 
+output.csv
+1) Add a New Site
+2) Predict Site Status 
+3) Output the Data
+4) Exit 
+Please enter a number corresponding to the desired action: 
+4
+bash-3.2$ exit
+exit
+
+Script done on Mon Mar  3 21:30:40 2014
