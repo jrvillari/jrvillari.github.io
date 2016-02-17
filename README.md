@@ -1,3 +1,3 @@
 jrvillari.github.io
 ===================
-Random Code Samples
+Code samples and segments.
